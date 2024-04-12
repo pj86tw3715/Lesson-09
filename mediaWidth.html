@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            color:red;
+            font-size:20px;
+            font-weight:bolder;
+        }
+        div{
+            width:300px;
+            height:100px;
+            border:solid 2px blue;
+        }
+/* 
+@media screen and (min-width:XXXpx) and (max-width:XXXpx){
+    CSS設定
+}
+作用:針對特定對象的解析度套用其下的CSS的設定
+min-width(最小寬度)，表示這個數字以上(包刮)的都適用。(>=)
+max-width(最大寬度)，表示這個數字以下(包刮)的都適用。(<=)
+*/
+/* 設定螢幕解析度0-575px之間的CSS設定，其設定適用於手機顯示 */
+       @media screen and (min-width:0px) and (max-width:575px) {
+        .text-color {
+             color:green;
+             width:200px;
+             height:100px;
+        }
+       }  
+/* 設定螢幕解析度576-767px之間的CSS設定，其設定適用於手機橫向顯示 */
+       @media screen and (min-width:576px) and (max-width:767px) {
+        .text-color {
+             color:blueviolet;
+             width:400px;
+             height:150px;
+        }
+       }  
+/* 設定螢幕解析度768-991px之間的CSS設定，其設定適用於平板顯示 */
+       @media screen and (min-width:768px) and (max-width:991px) {
+        .text-color {
+             color:black;
+             float:left;
+             margin-left:50px;
+             width:150px;
+             height:150px;
+        }
+       }  
+/* 設定螢幕解析度992-1199px之間的CSS設定，其設定適用於電腦顯示 */
+       @media screen and (min-width:992px) and (max-width:1199px) {
+        .text-color {
+             color:yellow;
+             float:left;
+             margin-left:100px;
+             width:500px;
+             height:150px;
+        }
+       }  
+/* 設定螢幕解析度1200-1399px之間的CSS設定，其設定適用於大型螢幕顯示 */
+       @media screen and (min-width:1200px) and (max-width:1399px) {
+        .text-color {
+             color:purple;
+             float:left;
+             margin-left:200px;
+             width:600px;
+             height:150px;
+        }
+       }  
+/* 設定螢幕解析度1400px以上的CSS設定，其設定適用於超大型螢幕顯示 */
+       @media screen and (min-width:1400px) {
+        .text-color {
+             color:aqua;
+             float:left;
+             margin-left:300px;
+             width:700px;
+             height:150px;
+             
+        }
+        .text-color p{
+            background-color: brown;
+        }
+       }  
+    </style>
+</head>
+<body>
+    <div>
+        <P>預設文字顏色，不同解析度不會改變</P>
+    </div>
+    <hr>
+    <div class="text-color">
+        <P>設定文字顏色，依使用者device解析度，改變內容</P>
+    </div>
+</body>
+</html>

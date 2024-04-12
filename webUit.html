@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        span{
+            border:solid 2px blue;
+            width:600px;
+            height:300px;
+            display:block;
+            padding:5px;
+        }
+        *{
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <p>px: 絕對單位，為螢幕中每個網點(pixel)</p>
+    <p>em: 相對單位，為設定元件經由乘以parent元件的 px 值</p>
+    <p>rem: 相對單位，為設定元件經由乘以body元件的 px 值</p>
+    <p>vw: 相對單位，為設定元件經由乘以brower可視高度的 px 值</p>
+    <p>em: 相對單位，為設定元件經由乘以brower可視高度的 px 值</p>
+    <span>
+        PX:14px;
+        <span style="font-size: 18px;width: 80%;height: 80%;">PX:18px;</span>
+    </span>
+    <hr color="orange">
+    <span>
+        em:14px;
+        <span style="font-size: 1.5em;width: 80%;height: 80%;">em:1.5em, 14*1.5=21px;
+            <span style="font-size: 1.5em;width: 80%;height: 80%;">
+            em:1.5em,21*1.5em=31.5px;
+        </span>
+        </span>
+    </span>
+    <hr color="yellow">
+    <span>
+        rem:14px;
+        <!-- rem使用最上層的數值 -->
+        <span style="font-size: 1.5rem;width: 80%;height: 80%;">rem:1.5em, 14*1.5=21px;
+            <span style="font-size: 1.5rem;width: 80%;height: 80%;">
+            rem:1.5em, 14*1.5=21px;
+            </span>
+        </span>
+    </span>
+    <hr color="green">
+    <span>
+        vw:14px;
+        <span style="font-size: 2vw;width: 80%;height: 80%;">viewWidth:1000px:2vw, 1000*0.02=20px;
+            <span style="font-size: 3vw;width: 80%;height: 80%;">
+            viewWidth:1000px:3vw, 1000*0.03=30px
+            </span>
+        </span>
+    </span>
+    <hr color="red">
+    <span>
+        vh:14px;
+        <span style="font-size: 2vh;width: 80%;height: 80%;">viewHeigth:700px:2vh, 700*0.02=14px;
+            <span style="font-size: 3vh;width: 80%;height: 80%;">
+            viewheigth:1000px:3vh, 700*0.03=30px
+            </span>
+        </span>
+    </span>
+</body>
+</html>

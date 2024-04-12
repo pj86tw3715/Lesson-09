@@ -1,0 +1,56 @@
+.header {
+    width: $w800;
+    height: $h52;
+    background-color:$fbcolor;
+    display: flex;
+
+    a {
+        color: aqua;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $wcolor;
+        text-decoration: underline;
+    }
+}
+
+.content {
+    width: $w800;
+    background-color:$bgc;
+    color: $wcolor;
+
+    a {
+        color: $wcolor;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #fbf97a;
+        text-decoration-line: line-through;
+    }
+}
+
+.footer {
+    width: $w800;
+    height: 152px;
+    background-color:lighten(purple,50%);
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+
+    a {
+        color: #aef55d;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $wcolor;
+        text-decoration-line: underline;
+        font-weight: bolder;
+    }
+}

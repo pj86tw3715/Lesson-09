@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .bgset{
+            width: 800px;
+            height: 300px;
+            background-color:aqua;
+            background-image: url("meeting.jpeg");
+            /* 觀念1:bgcolor,bgimages兩個設定可並存，若同時設定時，bgcolor將自動設定為bgimages下層 */
+            background-size:300px 300px;
+            /* 
+            觀念2:
+                width:第一位參數，設定背景大小的寬，可以是PX也可以是%、rem等。
+                height:第二位參數，設定背景大小的高，可以是PX也可以是%、rem等。
+                cover:等比例放大，填滿背景，超出的部分，自動裁切。
+                contain:等比例放大，填滿背景，超出的部分，不自動裁切。
+                
+             */
+            background-repeat: no-repeat;
+            background-position :top left;
+            /* background-position-x: 100px; */
+            /* background-position-y: 100px; */
+            /*觀念3: 
+                第一位參數垂直:top(靠上對齊)|center(置中)|bottom(靠下對齊)
+                第二位參數垂直:left(靠左對齊)|center(置中)|right(靠右對齊)
+                其他設定方式垂直與水平:可以使用px、%、任何的CSS的單位，控制背景出現位置。
+            */
+            background-attachment: local;
+            /* 觀念4:
+                    scroll:背景圖繪隨著網頁的滾動而捲動，為預設值。
+                    fixed:背景圖固定不會隨著網頁的滾動而捲動。
+                    local:背景圖會隨著元件內容的滾動而捲動。
+            */
+
+            overflow :auto
+        }
+    </style>
+</head>
+<body>
+    <div class="bgset">
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem expedita officiis, tempora aspernatur atque quas ab in molestias culpa error ad, iste, mollitia nobis? Voluptatum placeat excepturi voluptatibus consectetur.</P>
+    </div>
+</body>
+</html>

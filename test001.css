@@ -1,0 +1,248 @@
+.bg-color_red{
+    background-color: red;
+}
+.bg-color_blue{
+    background-color: blue;
+}
+.font-size{
+    font-size: 18px;
+}.font-weight{
+    font-weight: bolder;
+}
+.font-family{
+    font-family:'微軟正黑體', Arial, Helvetica, sans-serif;
+}
+.font-color_aqua{
+    flood-color: aqua;
+}
+.bg-color_brown{
+    background-color: brown;
+}
+.font-color_beige{
+    flood-color: beige;
+}
+.font-style{
+    font-style: normal;
+}
+.line-heigth{
+    line-height: 5em;
+}
+.font-family_Courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+.font-color_bisque{
+    flood-color: bisque;
+}
+
+@media (max-width: 575.98px) { 
+    .font-size{
+        font-size: 30px;
+    }.font-weight{
+        font-weight: lighter;
+    }
+    .font-color_aqua{
+        flood-color:cadetblue;
+    }
+    .bg-color_brown{
+        background-color:chartreuse;
+    }
+    .font-color_beige{
+        flood-color:crimson;
+    }
+    .font-style{
+        font-style:oblique;
+    }
+    .line-heigth{
+        line-height: 10em;
+    }
+    .font-color_bisque{
+        flood-color:cyan;
+    }
+ }
+
+@media (max-width: 767.98px) { 
+   
+ }
+
+
+@media (max-width: 991.98px) { 
+ 
+ }
+
+
+@media (max-width: 1199.98px) { 
+
+ }
+
+
+@media (max-width: 1399.98px) { 
+
+ }
+ .btn-purple {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: purple;
+    --bs-btn-border-color: purple;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #da51f8;
+    --bs-btn-hover-border-color: #b42ec1;
+    --bs-btn-focus-shadow-rgb: 208, 88, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b42ec1;
+    --bs-btn-active-border-color: #6c088c;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #b42ec1;
+    --bs-btn-disabled-border-color: #6c088c;
+  }
+  .btn-green{
+    --bs-btn-color: green;
+    --bs-btn-border-color: green;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #28e78e;
+    --bs-btn-hover-border-color: #198754;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #198754;
+    --bs-btn-active-border-color: #085833;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #085833;
+    --bs-gradient: none;
+  }
+  /* .btn,
+.btn:focus {
+    display: block;
+    position: relative;
+    z-index: 1;
+    min-width: 200px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    padding: 10px 20px;
+    margin: 10px 0px;
+}
+.btn:before,
+.btn:after {
+    content: '';
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+}
+.btn:hover {
+    color: #333333;
+    transition-delay: .5s;
+}
+.btn:hover:before {
+    transition-delay: 0s;
+}
+.btn:hover:after {
+    background: #FFFFFF;
+    transition-delay: .35s;
+}
+.btn.from-top:before,
+.btn.from-top:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+}
+.btn.from-top:before {
+    bottom: 0;
+    border: 1px solid #FFFFFF;
+    border-top: 0;
+    border-bottom: 0;
+}
+.btn.from-top:after {
+    top: 0;
+    height: 0;
+}
+.btn.from-top:hover:before,
+.btn.from-top:hover:after {
+    height: 100%;
+}
+.btn.from-bottom:before,
+.btn.from-bottom:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+}
+.btn.from-bottom:before {
+    top: 0;
+    border: 1px solid #FFFFFF;
+    border-top: 0;
+    border-bottom: 0;
+}
+.btn.from-bottom:after {
+    bottom: 0;
+    height: 0;
+}
+.btn.from-bottom:hover:before,
+.btn.from-bottom:hover:after {
+    height: 100%;
+}
+.btn.from-left:before,
+.btn.from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+.btn.from-left:before {
+    right: 0;
+    border: 1px solid #FFFFFF;
+    border-left: 0;
+    border-right: 0;
+}
+.btn.from-left:after {
+    left: 0;
+}
+.btn.from-left:hover:before,
+.btn.from-left:hover:after {
+    width: 100%;
+}
+.btn.from-right:before,
+.btn.from-right:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+.btn.from-right:before {
+    left: 0;
+    border: 1px solid #FFFFFF;
+    border-left: 0;
+    border-right: 0;
+}
+.btn.from-right:after {
+    right: 0;
+}
+.btn.from-right:hover:before,
+.btn.from-right:hover:after {
+    width: 100%;
+}
+.btn.from-center:before {
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 0;
+    border: 1px solid #FFFFFF;
+    border-left: 0;
+    border-right: 0;
+}
+.btn.from-center:after {
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: #FFFFFF;
+}
+.btn.from-center:hover:before {
+    left: 0;
+    width: 100%;
+}
+.btn.from-center:hover:after {
+    top: 0;
+    height: 100%;
+} */
